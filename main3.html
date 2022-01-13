@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>점심 메뉴 고르기</title>
+    <link rel="stylesheet" href="main3.css">
+
+    <script type="text/javascript">
+
+        function add_div(){
+        
+            var div = document.createElement('div');
+        
+        
+        
+            div.innerHTML = document.getElementById('room_type').innerHTML;
+        
+            document.getElementById('field').appendChild(div);
+        
+        }
+        
+        
+        
+        function remove_div(obj){
+        
+        document.getElementById('field').removeChild(obj.parentNode);
+        
+        }
+        
+
+
+
+
+
+
+
+        </script>
+        
+        
+
+    <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+
+
+
+   
+
+    
+
+</head>
+<body>
+    <div class="title">
+        <div class="title-1">
+            점심 메뉴 고르기
+        </div>
+    </div>
+
+    
+    
+<!-- 
+    <input type="button" value="+" onclick="add_div()"><br/> -->
+
+    <div id="room_type">
+    
+    <div class="form-group">
+    
+        <!-- <label for="image">제목</label> -->
+    
+        <input type="text" id="inputbutton" name="title" class="form-control" placeholder="메뉴명을 입력해주세요." ></input>
+        <input type="button" id="btn1" value="+" onclick="add_div()">
+        <input type="button" id="btn1" value="-" onclick="remove_div(this)">
+ 
+    
+    </div>
+
+    
+    </div>
+    
+    <div id="field"></div>
+    
+
+
+
+
+
+    
+
+    <div class="button">
+        <button class="button1">골라줘!</button>
+    </div>
+</body>
+</html>
